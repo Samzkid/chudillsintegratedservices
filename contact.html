@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Chudills Integrated Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo-title">
+        <img src="images/image3.png" alt="Chudills Logo" class="logo" />
+        <h1>CHUDILLS <span>INTEGRATED SERVICES</span></h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Form -->
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+
+      <form onsubmit="return showConfirmation()" action="https://formsubmit.co/Quartz226@yahoo.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: Quartz226@yahoo.com</p>
+        <p>Phone: +234 8038672299</p>
+        <p>Address: 105 Rumuola Road,off Ebony Road, Portharcourt, Nigeria.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">Quartz226@ | +234 8038672299</p>
+      <p>105 Rumuola Road,off Ebony Road, Portharcourt, Nigeria.</p>
+          <p class="rights">© 2025 Chudills Integrated Services. All rights reserved.</p>
+
+    </div>
+  </footer>
+  <script>
+  function showConfirmation() {
+    alert("Thank you! Your message has been sent.");
+    return true;
+  }
+</script>
+
+
+</body>
+</html>

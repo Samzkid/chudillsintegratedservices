@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chudills Integrated Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo-title">
+        <img src="images/image3.png" alt="Chudills Logo" class="logo" />
+        <h1>CHUDILLS <span>INTEGRATED SERVICES</span></h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>POWERING INNOVATION IN ENGINEERING & PROCUREMENT</h2>
+    <a href="contact.html" class="btn">Get in Touch</a>
+  </section>
+
+  <!-- Who We Are -->
+  <section class="about-preview container">
+    <div class="left">
+      <h3>Who We Are🚀</h3>
+      <p>
+        Chudills Integrated Services is a trusted provider of engineering and project solutions
+        for public and private sectors across Nigeria and West Africa.
+      </p>
+      <a href="about.html" class="btn-secondary">Learn More About Us</a>
+    </div>
+
+    <div class="right">
+      <h3>Achievments</h3>
+      <ul>
+        <li>✔ 10+ Years of Experience</li>
+        <li>✔ Certified Engineers</li>
+        <li>✔ Quality Assurance</li>
+        <li>✔ Customer Satisfaction</li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section class="services container fade-in">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Engineering Works</h4>
+        <p>Innovative and efficient engineering solutions tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <h4>Procurement</h4>
+        <p>High-quality sourcing and supply chain management services.</p>
+      </div>
+      <div class="card">
+        <h4>Project Management</h4>
+        <p>Comprehensive oversight to ensure project success.</p>
+      </div>
+      <div class="card">
+<h4>Consultancy</h4>
+<p>Counselling and consultation</p>
+      </div>
+      <div class="card">
+        <h4>Environmental Services</h4>
+      </div>
+      <div class="card">
+        <h4>Delivery</h4>
+        <p>Delivery of relief materials to any location & so much more!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Visual Credibility Section -->
+<section class="intro-image fade-in">
+  <div class="intro-text">
+    <h3>Why Choose Chudills?</h3>
+    <p>
+      At Chudills Integrated Services, we deliver top-notch engineering, procurement, and installation
+      solutions with passion, professionalism, and proven results. Our team is driven by innovation,
+      integrity, and efficiency to serve businesses across Nigeria and West Africa.
+    </p>
+  </div>
+  <div class="intro-img">
+    <img src="images/image1.jpg" alt="Chudills team at work" />
+    <img src="images/image2.jpg" alt="more works">
+  </div>
+</section>
+
+
+  <!-- Call to Action -->
+  <section class="cta fade-in">
+    <h3>START YOUR PROJECT WITH US TODAY!</h3>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <p>Quartz226@yahoo.com | +234 8038672299</p>
+      <p>105 Rumuola Road,off Ebony Road, Portharcourt, Nigeria.</p>
+      <div class="social-icons">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to="><img src="images/gmail.png" alt="Email" /></a>
+         <a href="https://wa.me/2348038672299" target="_blank"><img src="images/whatsapp.png" alt="whatsapp" /></a>
+      </div>
+          <p class="rights">© 2025 Chudills Integrated Services. All rights reserved.</p>
+<p>built by Samzkidweb3🚀</p>
+    </div>
+
+          <a href="https://x.com/Samzkid_web3" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://t.me/samzkidweb3" target="_blank"><i class="fab fa-telegram"></i></a>
+  </footer>
+  
+  <script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+<button id="scrollTopBtn" title="Back to top">⬆️</button>
+
+<script>
+  const topBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+
+  topBtn.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+</script>
+
+</body>
+</html>

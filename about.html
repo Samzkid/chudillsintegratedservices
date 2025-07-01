@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Chudills Integrated Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo-title">
+        <img src="images/image3.png" alt="Chudills Logo" class="logo" />
+        <h1>CHUDILLS <span>INTEGRATED SERVICES</span></h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main About Content -->
+  <main class="container">
+
+    <!-- Who We Are -->
+    <section class="about-section fade-in">
+      <h2>Who We Are</h2>
+      <p>
+        Chudills Integrated Services Nig. Limited is incorporated with the Corporate Affairs Commission (CAC)
+        with RC No. 1071756 to provide services in Engineering, Procurement, Installation, Construction,
+        and Project Maintenance and Management to the Private and Public Sector of Oil, Gas and other
+        allied sectors of the economy.
+      </p>
+      <p>
+        We are equipped with skilled personnel and resources to carry out projects professionally,
+        according to specification and on schedule — supported by modern technology and a proactive team.
+      </p>
+    </section>
+
+    <!-- Vision + Mission -->
+    <section class="vision-mission fade-in">
+      <div class="vm-card">
+        <h3>Our Vision</h3>
+        <p>
+          To build a strong and trusted service company of international repute, with a passion
+          for local content optimization. To create value and jobs to the satisfaction of our clients
+          in Nigeria and West Africa.
+        </p>
+      </div>
+
+      <div class="vm-card">
+        <h3>Our Mission</h3>
+        <p>
+          To provide you with effective service, minimal downtime, quality workmanship,
+          and complete project coordination — driven by a knowledgeable and experienced team.
+        </p>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="core-values fade-in">
+      <h3>Our Core Values</h3>
+      <div class="values">
+        <div class="value-card">🔒 Integrity</div>
+        <div class="value-card">⚙️ Efficiency</div>
+        <div class="value-card">🚀 Innovation</div>
+        <div class="value-card">🛡️ Safety</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <p>Quartz226@yahoo.com | +234 8038672299</p>
+      <p>105 Rumuola Road,off Ebony Road, Portharcourt, Nigeria.</p>
+          <p class="rights">© 2025 Chudills Integrated Services. All rights reserved.</p>
+    </div>
+    </div>
+  </footer>
+ <script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+ 
+
+</body>
+</html>
+
+
